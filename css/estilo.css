@@ -1,0 +1,394 @@
+:root {
+
+    --eeepe-azul: #0D47A1;
+    --eeepe-azul-escuro: #08306B;
+
+    --eeepe-amarelo: #FFC107;
+    --eeepe-amarelo-hover: #FFB300;
+
+}
+
+body {
+
+    background-color: #f8f9fa;
+
+}
+
+/* ========================================
+   TÍTULOS
+======================================== */
+
+h1 {
+
+    color: var(--eeepe-azul);
+    font-weight: bold;
+
+}
+
+.text-eeepe {
+
+    color: var(--eeepe-azul);
+
+}
+
+.page-title {
+
+    color: var(--eeepe-azul);
+    font-weight: 700;
+
+}
+
+.page-description {
+
+    color: #6c757d;
+
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar-eeepe {
+
+    background-color: var(--eeepe-azul);
+
+}
+
+.navbar-eeepe .navbar-brand,
+.navbar-eeepe .nav-link {
+
+    color: white !important;
+
+}
+
+.navbar-eeepe .nav-link:hover {
+
+    color: var(--eeepe-amarelo) !important;
+
+}
+
+.navbar-eeepe .dropdown-menu {
+
+    border: none;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+
+}
+
+.navbar-eeepe .dropdown-item {
+
+    font-weight: 500;
+
+}
+
+.navbar-eeepe .dropdown-item:hover {
+
+    background-color: var(--eeepe-amarelo);
+    color: #000;
+
+}
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.btn-eeepe {
+
+    background-color: var(--eeepe-azul);
+    border-color: var(--eeepe-azul);
+
+    color: white;
+
+}
+
+.btn-eeepe:hover {
+
+    background-color: var(--eeepe-azul-escuro);
+    border-color: var(--eeepe-azul-escuro);
+
+    color: white;
+
+}
+
+.btn-eeepe-warning {
+
+    background-color: var(--eeepe-amarelo);
+    border-color: var(--eeepe-amarelo);
+
+    color: #000;
+
+}
+
+.btn-eeepe-warning:hover {
+
+    background-color: var(--eeepe-amarelo-hover);
+    border-color: var(--eeepe-amarelo-hover);
+
+}
+
+.btn-status {
+
+    width: 110px;
+
+}
+
+/* ========================================
+   TABELAS
+======================================== */
+
+.table-eeepe thead {
+
+    background-color: var(--eeepe-azul);
+    color: white;
+
+}
+
+.table td {
+
+    vertical-align: middle;
+
+}
+
+/* ========================================
+   BADGES DE STATUS
+======================================== */
+
+.badge-ativo,
+.badge-inativo,
+.badge-aberto,
+.badge-concluido,
+.badge-admin,
+.badge-usuario {
+
+    padding: 8px 12px;
+
+    width: 120px;
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    border-radius: 20px;
+
+    font-size: 0.85rem;
+
+}
+
+/* Cadastro */
+
+.badge-ativo {
+
+    background-color: #198754;
+    color: white;
+
+}
+
+.badge-inativo {
+
+    background-color: #dc3545;
+    color: white;
+
+}
+
+/* Atendimento */
+
+.badge-aberto {
+
+    background-color: #ffc107;
+    color: #212529;
+
+}
+
+.badge-concluido {
+
+    background-color: #198754;
+    color: white;
+
+}
+
+/* Perfil */
+
+.badge-admin {
+
+    background-color: var(--eeepe-azul);
+    color: white;
+
+}
+
+.badge-usuario {
+
+    background-color: #6c757d;
+    color: white;
+
+}
+
+/* ========================================
+   DASHBOARD
+======================================== */
+
+.dashboard-card {
+
+    transition: all 0.2s ease;
+
+}
+
+.dashboard-card:hover {
+
+    transform: translateY(-3px);
+
+}
+
+/* ========================================
+   ATENDIMENTOS
+======================================== */
+
+.linha-atendimento {
+
+    transition: all 0.2s ease;
+
+}
+
+.linha-atendimento:hover {
+
+    background-color: #f8f9fa;
+
+}
+
+.collapse .card-body {
+
+    border-left: 4px solid var(--eeepe-amarelo);
+
+}
+.acoes-atendimento {
+
+    width: 380px;
+
+}
+
+.acoes-atendimento .d-flex {
+
+    flex-wrap: nowrap;
+
+}
+
+.acoes-atendimento .btn {
+
+    min-width: 105px;
+
+}
+.acoes-atendimento {
+    white-space: nowrap;
+}
+
+.col-detalhes {
+    width: 1%;
+    white-space: nowrap;
+}
+/* ========================================
+   LOGIN
+======================================== */
+
+.login-container {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-card {
+
+    width: 100%;
+    max-width: 450px;
+
+    background: #fff;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.10);
+
+    border-top: 5px solid var(--eeepe-amarelo);
+
+}
+
+.login-logo {
+
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background-color: var(--eeepe-azul);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+
+}
+
+.login-title {
+
+    color: var(--eeepe-azul);
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+}
+
+.login-subtitle {
+
+    color: #6c757d;
+
+    margin-bottom: 0;
+
+}
+
+.login-card .input-group-text {
+
+    background-color: var(--eeepe-azul);
+
+    color: white;
+
+    border-color: var(--eeepe-azul);
+
+}
+
+.login-card .form-control {
+
+    height: 46px;
+
+}
+
+.login-card .form-control:focus {
+
+    border-color: var(--eeepe-amarelo);
+
+    box-shadow: 0 0 0 .2rem rgba(255,193,7,.25);
+
+}
+
+.login-card .btn-eeepe {
+
+    height: 46px;
+
+    font-weight: 600;
+
+    font-size: 1rem;
+
+}
